@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITіпи</title>
+  <link rel="stylesheet" href="codes/styles.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">ITіпи</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Головна</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="getKb()">Клавіатури</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  onclick="getMouse()">Мишки</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="getHeadphone()">Навушники</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+      <p class="info">
+        Віталій Никифоряк(CEO): +380000000000
+      </p>
+      <div id="openModal" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">Оформлення підписки</h3>
+              <a href="#close" title="Close" class="close"  onclick="closeModal()">×</a>
+            </div>
+            <div class="modal-body">    
+              <p>
+                <button class="bt1" onclick="subscribe()">Підписатися ♥ </button>
+                <button class="bt2" onclick="subscribe()">Не підписуватися </button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>  
+  <script src="script.js"></script>
+</body>
+</html>
+
